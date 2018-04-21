@@ -5,6 +5,9 @@ const Listener = require('./commands')
 const discord = require('discord.js')
 const client = new discord.Client()
 
+const Events = require('./events')
+const event = new Events(client)
+
 class Bot {
 
     constructor (bot) {
@@ -29,6 +32,10 @@ class Bot {
                 console.log(`Logged in as ${client.user.tag}\nTOKEN = "${client.token}"\n`)
             }
         )
+    }
+
+    registerEvent (e, action) {
+        event.addEvent(e, action)
     }
 
     registerCommand (cmd, action) {
