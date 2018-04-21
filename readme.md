@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-npm i -S ahkframwork
+npm i -S ahkframework
 ```
 
 ## Usage
