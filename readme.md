@@ -1,52 +1,53 @@
 # AhkFramework
 
-> A discord framework to easily create bot, with commands and events.
+> A framework to create discord robots easily, with commands and events.
 
 ## Install
 
 ```bash
-npm i -S ahkframework
+npm install ahkframework
 ```
 
 ## Usage
 
 ```javascript
-const Bot = require('ahkframework')
-const prefix = "?"
+// Require the AhkFramework package
+const Bot = require('ahkframework');
 
+// Creating the config, with all the stuff we'll need
 const config = {
     token: "your token",
     name: "your bot name",
-    prefix: prefix,
+    prefix: "?",
     version: "X.X.X",
-    icon_path: "your path",
-    presence: { name: "text" }
-}
+    icon_path: "your path, can be a internet link",
+    presence: { name: config.prefix + "help" }
+};
 
 const x = {
     name: 'name',
     description: 'your description',
-    examples: ['a little examples'],
-    aliases: ['an aliases', 'a second aliases'],
+    examples: ['examples for the command'],
+    aliases: ['a first aliases', 'a second aliases'],
     permissions: {
         user: ['MANAGE_MESSAGES'],
         client: ['MANAGE_MESSAGES']
     }
-}
+};
 
-const user_bot = new Bot(config)
+const client = new Bot(config)
 
-user_bot.registerEvent('typingStart', (channel, user) => {
+client.registerEvent('typingStart', (channel, user) => {
     console.log('A user start typing')
-})
+});
 
-user_bot.registerCommand(x, (message, channel, client, args) => {
+client.registerCommand(x, (message, channel, client, args) => {
     //Action when a user use your commands
     console.log("a user use 'x' commands")
-})
+});
 
 //Use this to create the default command : help with your prefix
-user_bot.createDefaultCommand()
+client.createDefaultCommand();
 ```
 
 For more informations about "permissions" see [HERE](http://discordjs.readthedocs.io/en/latest/docs_permissionconstants.html)
