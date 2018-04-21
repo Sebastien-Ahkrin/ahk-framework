@@ -29,7 +29,6 @@ const x = {
     examples: ['a little examples'],
     aliases: ['an aliases', 'a second aliases'],
     permissions: {
-        //Permissions see [here](http://discordjs.readthedocs.io/en/latest/docs_permissionconstants.html)
         user: ['MANAGE_MESSAGES'],
         client: ['MANAGE_MESSAGES']
     }
@@ -50,13 +49,9 @@ user_bot.registerCommand(x, (message, channel, client, args) => {
 user_bot.createDefaultCommand()
 ```
 
+For more informations about "permissions" see [HERE](http://discordjs.readthedocs.io/en/latest/docs_permissionconstants.html)
+Source code on github : [HERE](https://github.com/Sebastien-Ahkrin/ahk-framework)
+
 ## License
 
 [MIT](http://vjpr.mit-license.org)
-
-[npm-image]: https://img.shields.io/npm/v/live-xxx.svg
-[npm-url]: https://npmjs.org/package/live-xxx
-[travis-image]: https://img.shields.io/travis/live-js/live-xxx/master.svg
-[travis-url]: https://travis-ci.org/live-js/live-xxx
-[coveralls-image]: https://img.shields.io/coveralls/live-js/live-xxx/master.svg
-[coveralls-url]: https://coveralls.io/r/live-js/live-xxx?branch=master
