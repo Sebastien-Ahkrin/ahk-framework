@@ -1,0 +1,30 @@
+{
+  "name": "framework-ahk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node test/index.js",
+    "start-dev": "babel-node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastien-Ahkrin/framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastien-Ahkrin/framework/issues"
+  },
+  "homepage": "https://github.com/Sebastien-Ahkrin/framework#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "@babel/node": "^7.0.0-beta.49"
+  }
+}
