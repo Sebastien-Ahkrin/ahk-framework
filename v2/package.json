@@ -1,22 +1,8 @@
 {
-  "name": "framework-ahk",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ahkframework",
+  "version": "2.0.0",
+  "description": "A framework to easily create discord bot",
   "main": "index.js",
-  "scripts": {
-    "dev": "node test/index.js",
-    "start-dev": "babel-node test/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sebastien-Ahkrin/framework.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sebastien-Ahkrin/framework/issues"
-  },
-  "homepage": "https://github.com/Sebastien-Ahkrin/framework#readme",
   "dependencies": {
     "discord.js": "^11.3.2"
   },
@@ -26,5 +12,25 @@
     "@babel/plugin-proposal-decorators": "^7.0.0-beta.47",
     "@babel/preset-env": "^7.0.0-beta.47",
     "@babel/node": "^7.0.0-beta.49"
-  }
+  },
+  "scripts": {
+    "dev": "node test/index.js",
+    "start-dev": "babel-node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastien-Ahkrin/ahk-framework.git"
+  },
+  "keywords": [
+    "Discord",
+    "Bot",
+    "Framework",
+    "JavaScript"
+  ],
+  "author": "Sebastien Ahkrin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sebastien-Ahkrin/ahk-framework/issues"
+  },
+  "homepage": "https://github.com/Sebastien-Ahkrin/ahk-framework#readme"
 }
